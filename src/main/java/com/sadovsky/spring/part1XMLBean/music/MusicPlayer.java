@@ -1,4 +1,4 @@
-package com.sadovsky.spring.music;
+package com.sadovsky.spring.part1XMLBean.music;
 
 import java.util.List;
 
@@ -39,5 +39,13 @@ public class MusicPlayer {
 
     public void setVolume(int volume) {
         this.volume = volume;
+    }
+
+    public void doMyInit(){
+        System.out.println("Doing Init method prototype scope");
+    }
+
+    public void doMyDestroy(){
+        System.out.println("Destroy method prototype scope");
     }
 }

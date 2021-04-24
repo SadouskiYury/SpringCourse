@@ -1,6 +1,6 @@
-package com.sadovsky.spring.music.types;
+package com.sadovsky.spring.part1XMLBean.music.types;
 
-import com.sadovsky.spring.music.Music;
+import com.sadovsky.spring.part1XMLBean.music.Music;
 
 public class JazzMusic implements Music {
     @Override
