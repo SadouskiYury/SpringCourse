@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:property-placeholder location="musicPlayer.properties"/>
+
+
+    <bean id="jazzMusic" class="part1XMLBean.music.types.JazzMusic"/>
+    <bean id="classicMusic" class="part1XMLBean.music.types.ClassicMusic"
+          init-method="doMyInit"
+          destroy-method="doMyDestroy"
+          factory-method="getInstance"
+    />
+    <bean id="rockMusic" class="part1XMLBean.music.types.RockMusic"/>
+
+    <bean id="musicPlayer"
+          class="part1XMLBean.music.MusicPlayer"
+          scope="prototype"
+          init-method="doMyInit"
+          destroy-method="doMyDestroy">
+        <property name="music">
+            <array>
+                <ref bean="rockMusic"/>
+                <ref bean="jazzMusic"/>
+                <ref bean="classicMusic"/>
+            </array>
+        </property>
+
+        <!--       core using properties file and varaibles-->
+        <!--        <property name="name" value="${musicPlayer.name}"/>-->
+        <!--        <property name="volume" value="${musicPlayer.volume}"/>-->
+
+
+        <property name="name" value="CD"/>
+        <property name="volume" value="75"/>
+        <!--        <constructor-arg ref="musicBean"/>-->
+
+
+    </bean>
+
+</beans>
