@@ -5,8 +5,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class JazzMusic implements Music {
-    @Override
-    public String getSong() {
-        return "This is Jazz";
-    }
+	@Override
+	public String getSong() {
+		return "This is Jazz";
+	}
 }
