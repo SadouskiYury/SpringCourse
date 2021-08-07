@@ -17,6 +17,7 @@ public class Bus implements Transport {
 	public void init(){
 		announcer.announce(nameBus + "was created\n");
 	}
+
 	@Override
 	public void start() {
 		System.out.println(nameBus + " starts!!!");

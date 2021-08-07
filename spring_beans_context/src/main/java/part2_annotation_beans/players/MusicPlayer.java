@@ -1,6 +1,6 @@
-package part2AnnotationBean.players;
+package part2_annotation_beans.players;
 
-import part2AnnotationBean.music.Music;
+import part2_annotation_beans.music.Music;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -9,7 +9,7 @@ import java.util.List;
 
 import static java.lang.String.format;
 
-@Component()
+@Component
 public class MusicPlayer implements Player {
 //    @Autowired
 	private List<Music> music;

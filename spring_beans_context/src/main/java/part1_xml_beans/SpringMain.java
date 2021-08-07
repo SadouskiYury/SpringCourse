@@ -1,17 +1,21 @@
-package part1XMLBean;
+package part1_xml_beans;
 
-import part1XMLBean.music.MusicPlayer;
+import part1_xml_beans.music.Music;
+import part1_xml_beans.music.MusicPlayer;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import part1_xml_beans.music.types.JazzMusic;
 
 public class SpringMain {
 	public static void main(String[] args) {
 		ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+		//  prototype scope
 		MusicPlayer musicPlayer = applicationContext.getBean("musicPlayer", MusicPlayer.class);
-//        example singltone and prototype scope
 		MusicPlayer musicPlayer2 = applicationContext.getBean("musicPlayer", MusicPlayer.class);
-		System.out.println(musicPlayer == musicPlayer2);
-		System.out.println(musicPlayer);
-		System.out.println(musicPlayer2);
+		System.out.println("Prototype: " + (musicPlayer == musicPlayer2));
+		//  singleton scope by default
+		Music jazzMusic = applicationContext.getBean("jazzMusic", JazzMusic.class);
+		Music jazzMusic2 = applicationContext.getBean("jazzMusic", JazzMusic.class);
+		System.out.println("Singleton: " + (jazzMusic2 == jazzMusic));
 
 
 		musicPlayer.playMusic();

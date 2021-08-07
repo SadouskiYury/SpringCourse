@@ -1,6 +1,6 @@
-package part2AnnotationBean.players;
+package part2_annotation_beans.players;
 
-import part2AnnotationBean.videos.Video;
+import part2_annotation_beans.videos.Video;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;

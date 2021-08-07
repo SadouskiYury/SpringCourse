@@ -1,6 +1,6 @@
-package part2AnnotationBean.music.types;
+package part2_annotation_beans.music.types;
 
-import part2AnnotationBean.music.Music;
+import part2_annotation_beans.music.Music;
 import org.springframework.stereotype.Component;
 
 @Component

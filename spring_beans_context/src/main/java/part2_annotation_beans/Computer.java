@@ -1,6 +1,6 @@
-package part2AnnotationBean;
+package part2_annotation_beans;
 
-import part2AnnotationBean.players.Player;
+import part2_annotation_beans.players.Player;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;

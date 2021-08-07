@@ -1,4 +1,4 @@
-package part1XMLBean.music;
+package part2_annotation_beans.music;
 
 public interface Music {
 	String getSong();

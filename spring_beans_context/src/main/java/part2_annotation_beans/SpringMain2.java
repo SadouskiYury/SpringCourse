@@ -1,4 +1,4 @@
-package part2AnnotationBean;
+package part2_annotation_beans;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

@@ -1,4 +1,4 @@
-package part1XMLBean.music;
+package part1_xml_beans.music;
 
 import java.util.List;
 
@@ -6,6 +6,7 @@ public class MusicPlayer {
 	private List<Music> music;
 	private String name;
 	private int volume;
+	private String brand;
 
 	//IoC
 	public MusicPlayer(List<Music> music) {
@@ -20,9 +21,15 @@ public class MusicPlayer {
 	}
 
 	public void playMusic() {
-		music.forEach(s -> System.out.println(s.getSong()));
+		printParameters();
+		music.forEach(s -> System.out.println("Playing: " + s.getSong()));
+	}
+
+	private void printParameters() {
+		System.out.println("----------Player parameters------------");
 		System.out.println("Player: " + name);
 		System.out.println("Volume: " + volume);
+		System.out.println("Brand: " + brand);
 	}
 
 	public String getName() {
@@ -47,5 +54,9 @@ public class MusicPlayer {
 
 	public void doMyDestroy() {
 		System.out.println("Destroy method prototype scope");
+	}
+
+	public void setBrand(String brand) {
+		this.brand = brand;
 	}
 }

@@ -6,19 +6,20 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
+
     <context:property-placeholder location="musicPlayer.properties"/>
 
 
-    <bean id="jazzMusic" class="part1XMLBean.music.types.JazzMusic"/>
-    <bean id="classicMusic" class="part1XMLBean.music.types.ClassicMusic"
+    <bean id="jazzMusic" class="part1_xml_beans.music.types.JazzMusic"/>
+    <bean id="classicMusic" class="part1_xml_beans.music.types.ClassicMusic"
           init-method="doMyInit"
           destroy-method="doMyDestroy"
           factory-method="getInstance"
     />
-    <bean id="rockMusic" class="part1XMLBean.music.types.RockMusic"/>
+    <bean id="rockMusic" class="part1_xml_beans.music.types.RockMusic"/>
 
     <bean id="musicPlayer"
-          class="part1XMLBean.music.MusicPlayer"
+          class="part1_xml_beans.music.MusicPlayer"
           scope="prototype"
           init-method="doMyInit"
           destroy-method="doMyDestroy">
@@ -34,10 +35,9 @@
         <!--        <property name="name" value="${musicPlayer.name}"/>-->
         <!--        <property name="volume" value="${musicPlayer.volume}"/>-->
 
-
+        <property name="brand" value="${musicPlayer.brand}"/>
         <property name="name" value="CD"/>
         <property name="volume" value="75"/>
-        <!--        <constructor-arg ref="musicBean"/>-->
 
 
     </bean>

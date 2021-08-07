@@ -1,6 +1,6 @@
-package part1XMLBean.music.types;
+package part1_xml_beans.music.types;
 
-import part1XMLBean.music.Music;
+import part1_xml_beans.music.Music;
 
 public class JazzMusic implements Music {
 	@Override
