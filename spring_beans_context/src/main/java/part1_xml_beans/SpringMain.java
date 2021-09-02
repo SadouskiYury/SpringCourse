@@ -3,7 +3,7 @@ package part1_xml_beans;
 import part1_xml_beans.music.Music;
 import part1_xml_beans.music.MusicPlayer;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import part1_xml_beans.music.types.JazzMusic;
+import part1_xml_beans.music.genres.JazzMusic;
 
 public class SpringMain {
 	public static void main(String[] args) {

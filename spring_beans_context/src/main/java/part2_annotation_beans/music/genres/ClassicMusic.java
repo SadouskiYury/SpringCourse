@@ -1,12 +1,15 @@
-package part2_annotation_beans.music.types;
+package part2_annotation_beans.music.genres;
 
 import part2_annotation_beans.music.Music;
 import org.springframework.stereotype.Component;
 
 @Component
-public class RockMusic implements Music {
+public class ClassicMusic implements Music {
+	private ClassicMusic() {
+	}
+
 	@Override
 	public String getSong() {
-		return "Rock Song";
+		return "Classic Song";
 	}
 }
