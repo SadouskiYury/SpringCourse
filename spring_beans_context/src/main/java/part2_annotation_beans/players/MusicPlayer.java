@@ -1,30 +1,22 @@
 package part2_annotation_beans.players;
 
-import part2_annotation_beans.music.Music;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+import part2_annotation_beans.music.Music;
 
 import java.util.List;
 
-import static java.lang.String.format;
-
-@Component
+@Component("mPl")
 public class MusicPlayer implements Player {
-//    @Autowired
 	private List<Music> music;
 	@Value("${musicPlayer.name}")
 	private String name;
 	@Value("${musicPlayer.volume}")
 	private int volume;
 
-	//IoC
-	@Autowired
+
 	public MusicPlayer(List<Music> music) {
 		this.music = music;
-	}
-
-	public MusicPlayer() {
 	}
 
 	public void setMusic(List<Music> music) {
@@ -53,7 +45,7 @@ public class MusicPlayer implements Player {
 
 	@Override
 	public void play() {
-		System.out.println(format("Player: %s\nVolume: %s\n\n", name, volume));
+		System.out.printf("Player: %s\nVolume: %s\n\n%n", name, volume);
 		playMusic();
 	}
 }

@@ -18,6 +18,7 @@ public class Movies implements Video {
 		for (Genres genre : genres) {
 			System.out.println(genre.name);
 		}
+
 	}
 
 	enum Genres {

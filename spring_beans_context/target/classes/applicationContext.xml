@@ -10,13 +10,13 @@
     <context:property-placeholder location="musicPlayer.properties"/>
 
 
-    <bean id="jazzMusic" class="part1_xml_beans.music.types.JazzMusic"/>
-    <bean id="classicMusic" class="part1_xml_beans.music.types.ClassicMusic"
+    <bean id="jazzMusic" class="part1_xml_beans.music.genres.JazzMusic"/>
+    <bean id="classicMusic" class="part1_xml_beans.music.genres.ClassicMusic"
           init-method="doMyInit"
           destroy-method="doMyDestroy"
           factory-method="getInstance"
     />
-    <bean id="rockMusic" class="part1_xml_beans.music.types.RockMusic"/>
+    <bean id="rockMusic" class="part1_xml_beans.music.genres.RockMusic"/>
 
     <bean id="musicPlayer"
           class="part1_xml_beans.music.MusicPlayer"
