@@ -1,16 +1,19 @@
 # SpringCourse
 
-### - module spring_beans_comtext:
-***shows how to work with beans factory using xml configuration file or just spring annotation***
+### - module spring_beans_context:
+***combines 2 parts(xml and annotation spring app configuration)***
 ``` 
-learned how to use dependecy injection using spring xml and annotations to create beans
+- implemnted spring app using xml configuration file
+- implemnted spring app using only annatations 
+- leraned work of dependecy inections by spring (IOC, BeansFactory, Beans, Lifececle of beans..)
 ```
+
 
 ### - module workwlow_creating_spring:
 ***ilustrates work spring bean factory***
 ```
-- implented application context with configuration file
-- implemented the annotation for  reading properties file for App Config
+- implemnted application context with configuration file
+- implemnted the annotation for  reading properties file for App Config
 - implemnted the annotation for dependecy injection objects
 - implemnted logic to trigger init method after initialization object using @PostConstruct annotation
 - implemented @Singleton annotation to show how it's work this pattern in spring using cache 
