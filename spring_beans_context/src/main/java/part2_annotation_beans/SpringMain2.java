@@ -14,8 +14,8 @@ public class SpringMain2 {
 		Player player2 = applicationContext.getBean("vPl", VideoPlayer.class);
 		Assert.assertNotEquals("As scope prototype object should be different", player.hashCode(), player2.hashCode());
 		//		check scope singleton by default
-		Player musicPlayer = applicationContext.getBean("mPl", MusicPlayer.class);
-		Player musicPlayer1 = applicationContext.getBean("mPl", MusicPlayer.class);
+		Player musicPlayer = applicationContext.getBean("musicPlayer", MusicPlayer.class);
+		Player musicPlayer1 = applicationContext.getBean("musicPlayer", MusicPlayer.class);
 		Assert.assertEquals(musicPlayer.hashCode(), musicPlayer1.hashCode());
 
 

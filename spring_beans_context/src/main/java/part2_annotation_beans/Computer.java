@@ -26,7 +26,7 @@ public class Computer {
 
 	@PreDestroy
 	public void destroyComputer(){
-		System.out.println("Destroying of computer");
+		System.out.printf("Destroying of computer: %s%n", id);
 	}
 
 	public void turnOnPlayer() {
