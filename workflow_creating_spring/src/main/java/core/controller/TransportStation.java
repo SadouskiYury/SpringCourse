@@ -1,7 +1,7 @@
 package core.controller;
 
-import core.bean_factory.Singelton;
 import core.announcers.Announcer;
+import core.bean_factory.Singelton;
 import core.business_objects.transport.Transport;
 import core.dependecy_injection.InjectByType;
 

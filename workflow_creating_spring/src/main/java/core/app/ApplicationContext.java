@@ -1,8 +1,8 @@
 package core.app;
 
+import core.app.config.Config;
 import core.bean_factory.ObjectFactory;
 import core.bean_factory.Singelton;
-import core.app.config.Config;
 import lombok.Getter;
 import lombok.Setter;
 

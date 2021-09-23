@@ -1,8 +1,8 @@
 package core.app;
 
-import core.bean_factory.ObjectFactory;
 import core.app.config.Config;
 import core.app.config.JavaConfig;
+import core.bean_factory.ObjectFactory;
 
 import java.util.Map;
 
