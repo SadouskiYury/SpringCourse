@@ -1,8 +1,8 @@
-package by.yury_sadovsky.core;
+package course_by_alishev.core;
 
-import by.yury_sadovsky.core.music.Music;
-import by.yury_sadovsky.core.music.MusicPlayer;
-import by.yury_sadovsky.core.music.genres.JazzMusic;
+import course_by_alishev.core.music.Music;
+import course_by_alishev.core.music.MusicPlayer;
+import course_by_alishev.core.music.genres.JazzMusic;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {

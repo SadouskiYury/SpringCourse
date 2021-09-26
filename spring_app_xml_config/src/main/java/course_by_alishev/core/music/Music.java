@@ -1,4 +1,4 @@
-package by.yury_sadovsky.core.music;
+package course_by_alishev.core.music;
 
 public interface Music {
 	String getSong();

@@ -1,17 +1,21 @@
-# SpringFramework - Core
+# SpringFramework
 
+## Core Container
 
 ### - module spring_app_java_config:
 ***spring app using java configuration annotations (course by 'alishev')***
-
 ### - module spring_app_xml_config:
-***spring app using xml configuration file (course by 'alishev')***
-
+***spring app using xml configuration file***
+```
+contains two part:
+- 1. based on course by 'Alishev'
+- 2. based on course by 'Chad Darby'
+```
 ### Result
 
 ```
-- find out how is working BeanFactory and IOC container;
-- learned how is working dependency injections of beans by xml file and annotations;
+- find out how is working IOC container (BeanFactory, ApplicationContext);
+- learned how to  manage of dependency injections by xml file and annotations;
 - learned how to inject properties.file by xml file and annotations;
 - implemented post bean processes (@PostConstruct) and destroy bean methods;
 - learned how to manage and configure scope of beans by xml file and annotations;

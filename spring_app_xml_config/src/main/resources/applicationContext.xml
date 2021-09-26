@@ -10,16 +10,16 @@
     <context:property-placeholder location="musicPlayer.properties"/>
 
 
-    <bean id="jazzMusic" class="by.yury_sadovsky.core.music.genres.JazzMusic"/>
-    <bean id="classicMusic" class="by.yury_sadovsky.core.music.genres.ClassicMusic"
+    <bean id="jazzMusic" class="course_by_alishev.core.music.genres.JazzMusic"/>
+    <bean id="classicMusic" class="course_by_alishev.core.music.genres.ClassicMusic"
           init-method="doMyInit"
           destroy-method="doMyDestroy"
           factory-method="getInstance"
     />
-    <bean id="rockMusic" class="by.yury_sadovsky.core.music.genres.RockMusic"/>
+    <bean id="rockMusic" class="course_by_alishev.core.music.genres.RockMusic"/>
 
     <bean id="musicPlayer"
-          class="by.yury_sadovsky.core.music.MusicPlayer"
+          class="course_by_alishev.core.music.MusicPlayer"
           scope="prototype"
           init-method="doMyInit"
           destroy-method="doMyDestroy">

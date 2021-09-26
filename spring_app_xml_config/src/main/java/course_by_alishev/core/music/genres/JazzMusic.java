@@ -1,6 +1,6 @@
-package by.yury_sadovsky.core.music.genres;
+package course_by_alishev.core.music.genres;
 
-import by.yury_sadovsky.core.music.Music;
+import course_by_alishev.core.music.Music;
 
 public class JazzMusic implements Music {
 	@Override
