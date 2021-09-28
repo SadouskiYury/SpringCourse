@@ -11,7 +11,6 @@
         <module>workflow_creating_spring</module>
         <module>spring_app_java_config</module>
         <module>spring_app_xml_config</module>
-        <module>udemy_spring_course</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -1,6 +1,6 @@
-package by.yury_sadovsky.core.players;
+package course_by_alishev.core.players;
 
-import by.yury_sadovsky.core.videos.Video;
+import course_by_alishev.core.videos.Video;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Scope;

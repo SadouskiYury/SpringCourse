@@ -1,12 +1,12 @@
-package by.yury_sadovsky.core.videos;
+package course_by_alishev.core.videos;
 
 import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-import static by.yury_sadovsky.core.videos.Movies.Genres.ACTION;
-import static by.yury_sadovsky.core.videos.Movies.Genres.HORROR;
-import static by.yury_sadovsky.core.videos.Movies.Genres.WAR;
+import static course_by_alishev.core.videos.Movies.Genres.ACTION;
+import static course_by_alishev.core.videos.Movies.Genres.HORROR;
+import static course_by_alishev.core.videos.Movies.Genres.WAR;
 
 @Component
 public class Movies implements Video {

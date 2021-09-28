@@ -9,7 +9,7 @@
 
     <context:property-placeholder location="sport.properties"/>
 
-    <bean id="myFortuneService" class="course_by_chad_darby.core.HappyFortuneService"/>
+    <bean id="myFortuneService" class="course_by_chad_darby.core.services.HappyFortuneService"/>
     <bean id="myCoach" class="course_by_chad_darby.core.sports_coaches.FootballCoach"
           init-method="initMySportStuff" destroy-method="destroyMySportStuff">
         <!--        set up constructor injection-->

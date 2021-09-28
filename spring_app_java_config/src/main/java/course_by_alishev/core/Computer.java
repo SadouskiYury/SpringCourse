@@ -1,6 +1,6 @@
-package by.yury_sadovsky.core;
+package course_by_alishev.core;
 
-import by.yury_sadovsky.core.players.Player;
+import course_by_alishev.core.players.Player;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;

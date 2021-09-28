@@ -1,4 +1,4 @@
-package by.yury_sadovsky.core.videos;
+package course_by_alishev.core.videos;
 
 import org.springframework.stereotype.Component;
 

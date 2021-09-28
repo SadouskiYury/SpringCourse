@@ -1,6 +1,6 @@
-package by.yury_sadovsky.core.players;
+package course_by_alishev.core.players;
 
-import by.yury_sadovsky.core.music.Music;
+import course_by_alishev.core.music.Music;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
